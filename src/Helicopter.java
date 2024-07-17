@@ -15,6 +15,25 @@ public class Helicopter extends javax.swing.JFrame implements Vehicle {
     @Override
     public void updateSliderValue(int value) {
         this.value = value;
+        if(jCheckBox2.isSelected()){
+            if (value > 25) {
+                jButton1.setEnabled(true);
+            } else {
+                jButton1.setEnabled(false);
+            }
+
+            if (value > 50) {
+                jButton2.setEnabled(true);
+            } else {
+                jButton2.setEnabled(false);
+            }
+
+            if (value > 75) {
+                jButton3.setEnabled(true);
+            } else {
+                jButton3.setEnabled(false);
+            }
+        }
     }
     @Override
     public void areaCheck(boolean x){
@@ -144,9 +163,9 @@ public class Helicopter extends javax.swing.JFrame implements Vehicle {
         jButton3.setEnabled(false);
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 100, 128, 42));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Desktop\\Wallpaper Texture Surface Military Color HD Background.jpg")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Wallpaper Texture Surface Military Color HD Background.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, 380));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 380));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
