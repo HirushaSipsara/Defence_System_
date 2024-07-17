@@ -14,6 +14,31 @@ public class Submarine extends javax.swing.JFrame implements Vehicle {
     @Override
     public void updateSliderValue(int value) {
         this.value = value; 
+        if(jCheckBox2.isSelected()){
+            if (value > 20) {
+                jButton1.setEnabled(true);
+            } else {
+                jButton1.setEnabled(false);
+            }
+            
+            if (value > 40) {
+                jButton2.setEnabled(true);
+            } else {
+                jButton2.setEnabled(false);
+            }
+            
+            if (value > 60) {
+                jButton3.setEnabled(true);
+            } else {
+                jButton3.setEnabled(false);
+            }
+            
+            if (value > 80) {
+                jButton5.setEnabled(true);
+            } else {
+                jButton5.setEnabled(false);
+            }
+        }
     }
     @Override
     public void areaCheck(boolean x){
@@ -39,6 +64,7 @@ public class Submarine extends javax.swing.JFrame implements Vehicle {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         textField1 = new java.awt.TextField();
         jLabel2 = new javax.swing.JLabel();
@@ -55,6 +81,9 @@ public class Submarine extends javax.swing.JFrame implements Vehicle {
         jCheckBox2 = new javax.swing.JCheckBox();
         jButton4 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Downloads\\Wallpaper Texture Surface Military Color HD Background.jpg")); // NOI18N
+        jLabel6.setText("jLabel5");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(650, 450));
@@ -148,9 +177,9 @@ public class Submarine extends javax.swing.JFrame implements Vehicle {
         });
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(397, 311, -1, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Desktop\\Wallpaper Texture Surface Military Color HD Background.jpg")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Wallpaper Texture Surface Military Color HD Background.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 610, 380));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 380));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -216,6 +245,7 @@ public class Submarine extends javax.swing.JFrame implements Vehicle {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSlider jSlider2;
     private javax.swing.JSpinner jSpinner1;
