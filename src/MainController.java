@@ -155,7 +155,7 @@ public class MainController extends javax.swing.JFrame{
         getContentPane().add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(339, 213, 212, 117));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 348, 410, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Desktop\\Wallpaper Texture Surface Military Color HD Background.jpg")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Wallpaper Texture Surface Military Color HD Background.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 390));
 
